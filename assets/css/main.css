@@ -764,7 +764,7 @@ input, select, textarea {
 		dl dt {
 			display: block;
 			font-weight: 600;
-			margin: 0 0 1rem 0;
+			margin: 0 0 2rem 0;
 		}
 
 		dl dd {
@@ -894,7 +894,6 @@ input, select, textarea {
 		}
 
 /* Icons */
-
 	ul.icons {
 		cursor: default;
 		list-style: none;
@@ -908,6 +907,13 @@ input, select, textarea {
 
 			ul.icons li:last-child {
 				padding-right: 0;
+				vertical-align: bottom;
+			}
+
+			ul.icons li:last-child img {
+				width: 20px;
+				height: auto;
+				padding-bottom: -5px;
 			}
 
 			ul.icons li a {
