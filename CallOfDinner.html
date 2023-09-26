@@ -18,18 +18,6 @@
 	</noscript>
 </head>
 
-<!-- Background -->
-<div id="starpos">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
-</div>
-<div id="starpos2">
-	<div id='stars'></div>
-	<div id='stars2'></div>
-	<div id='stars3'></div>
-</div>
-
 <body class="is-preload">
 
 	<!-- Wrapper -->
@@ -39,6 +27,7 @@
 		<header id="header">
 			<h1>Call of Dinner</h1>
 			<h2>Student Studio: Stewdio - 6 Weeks</h2>
+			<h2><a class="link" href="https://snabkol.itch.io/call-of-dinner">Download the game here!</a></li><br></h2>
 		</header>
 
 		<nav id="nav" style="display: none">
@@ -46,7 +35,7 @@
 				<li><a href="#summary" class="active">Summary</a></li>
 				<li><a href="#contribution">Contribution & Reflection</a></li>
 				<li><a href="#credits">Credits</a></li>
-				<li style="color:blue"><a href="documents\CV.pdf">CV</a></li>
+				<li><a class="link" href="documents\CV.pdf">CV</a></li>
 
 			</ul>
 		</nav>
@@ -55,37 +44,44 @@
 		<div id="main">
 
 			<!-- Content -->
+
+			<!--Trailer-->
+			<section id="trailer" class="main">
+				<h2>Trailer</h2>
+				<iframe width="100%" height="1024" src="https://www.youtube.com/embed/D_rrU_xSqjc?si=uCvLhEAiTq-LRFGX"
+					title="Call of Dinner Gameplay" frameborder="1"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					allowfullscreen></iframe>
+			</section>
+
 			<!--Summary-->
 			<section id="summary" class="main">
 				<h2 data-aos="fade-right">Summary</h2>
 				<ul data-aos="fade-right">
 					<ul>
 						<table>
-                            <thead>
-                                <tr>
-                                    <th>Purpose</th>
-                                    <th>Duration</th>
-                                    <th>Responsibilities</th>
-                                    <th>Platform</th>
-                                    <th>Engine</th>
-                                </tr>
+							<thead>
+								<tr>
+									<th>Purpose</th>
+									<th>Duration</th>
+									<th>Responsibilities</th>
+									<th>Platform</th>
+									<th>Engine</th>
+								</tr>
 							</thead>
-                                <tr>
-                                    <td>Student Project 1 @ Playgroundsquad</td>
-                                    <td>6 Weeks</td>
-                                    <td>Gameplay, Workflow & UI</td>
-                                    <td>PC</td>
-                                    <td>Unreal Engine 5</td>
-                                </tr>
-                          
-                        </table>
-                        <tfoot>
-                            <a href="https://snabkol.itch.io/call-of-dinner">Itch.Io Page</a></li><br>
-                        </tfoot><br>
+							<tr>
+								<td>Student Project 1 @ Playgroundsquad</td>
+								<td>6 Weeks</td>
+								<td>Gameplay, Workflow & UI</td>
+								<td>PC</td>
+								<td>Unreal Engine 5</td>
+							</tr>
 
-						<li>Call of Dinner is a First-Person, cooking simulator with violent vegetable massacre and crazy cooking! 
-                            Control the unnamed protagonist and protect yourself from murderous fruits and vegetables while preparing 
-                            succulent meals for your customers to enjoy!</li>
+						<li>Call of Dinner is a First-Person, cooking simulator with violent vegetable massacre and
+							crazy cooking!
+							Control the unnamed protagonist and protect yourself from murderous fruits and vegetables
+							while preparing
+							succulent meals for your customers to enjoy!</li>
 					</ul>
 				</ul>
 			</section>
@@ -94,24 +90,41 @@
 			<section id="contribution" class="main">
 				<h2 data-aos="fade-up" data-delay="1000">Contribution & Reflection</h2>
 				<ul data-aos="fade-up" data-delay="1000">
+					<ul>
+                        <li>• UI</li>
+                        <li>• Player Feedback</li>
+                        <li>• Game Flow</li>
+                        <li>• VFX & SFX</li>
+                    </ul>
 					<p><span class="image left"></span>
 						<img src="images/Game&StudioLogos/stewdio.png" alt="" height="256" width="256">
-						In Call of Dinner I was responsible for Gameplay & UI Design. Most of the time was spent learning the engine and development cycle. 
-                        Only being two designers meant that both me and Emma had to be very generalist in this project.</p>
-                    <p> <a style="color:#1E1F2E">UI & Feedback</a> - Most of my work went into making sure that the UI of the game clearly conveyed all the neccessary information 
-                        while still keeping the screen free of clutter. One of the hardest pieces of feedback was when you got hit or hit an enemy. 
-                        After many iterations we figured out that sounds were the most impactful way of doing this without cluttering the screen. 
-                        This lead to the melee attack to get a distinct sound on-hit and the player getting a red flash whenever they would take damage. </p>
+						In Call of Dinner I was responsible for Gameplay & UI Design. Most of the time was spent
+						learning the engine and development cycle.
+						Only being two designers meant that both me and Emma had to be very generalist in this project.
+					</p>
+					<p> <a class="bold">UI & Feedback</a> - Most of my work went into making sure that the UI of the
+						game clearly conveyed all the neccessary information
+						while still keeping the screen free of clutter. One of the hardest pieces of feedback was when
+						you got hit or hit an enemy.
+						After many iterations we figured out that sounds were the most impactful way of doing this
+						without cluttering the screen.
+						This lead to the melee attack to get a distinct sound on-hit and the player getting a red flash
+						whenever they would take damage. </p>
 
-                    <p> <a style="color:#1E1F2E">Speed & time</a> - I spent a lot of time playtesting the game to make sure that the enemies would spawn fast enough to ensure 
-                        there's always a threat, but not fast enough to make it so that the player is overwhelmed. The reception of playtesters have been 
-                        that this balance incites certain stress without making the game unbeatable which aligned with our design vision.</p>
-                    
-                    <p> <a style="color:#1E1F2E">Miscellaneous</a> - As we spent a lot of time doing bits of everything I also ended up making some VFX for the game in the 
-                        form of smoke and a muzzleflash. Organizing the GDD and acting as mediator between the different disciplines.</p>
+					<p> <a class="bold">Speed & time</a> - I spent a lot of time playtesting the game to make sure that
+						the enemies would spawn fast enough to ensure
+						there's always a threat, but not fast enough to make it so that the player is overwhelmed. The
+						reception of playtesters have been
+						that this balance incites certain stress without making the game unbeatable which aligned with
+						our design vision.</p>
+
+					<p> <a class="bold">Miscellaneous</a> - As we spent a lot of time doing bits of everything I also
+						ended up making some VFX for the game in the
+						form of smoke and a muzzleflash. Organizing the GDD and acting as mediator between the different
+						disciplines.</p>
 				</ul>
 			</section>
-			
+
 			<!--Image Slideshow-->
 			<section>
 				<div class="box alt">
@@ -121,19 +134,19 @@
 								<img src="" alt="">
 							</span>
 						</div>
-								<!--COPY THIS TO MAKE MORE IMAGES IN GRID-->
+						<!--COPY THIS TO MAKE MORE IMAGES IN GRID-->
 						<div class="col-4">
 							<span class="image fit">
 								<img src="images/CallOfDinner/CallOfDinnerUI.png">
 							</span>
 						</div>
-								<!--COPY END HERE-->
+						<!--COPY END HERE-->
 						<div class="col-4">
 							<span class="image fit">
 								<img src="images/CallOfDinner/COD_SmokeVFX.gif">
-                            </img>
+								</img>
 						</div>
-								<!--COPY ABOVE THIS-->
+						<!--COPY ABOVE THIS-->
 					</div>
 				</div>
 			</section>
@@ -166,16 +179,16 @@
 								<td></td>
 								<td>Linus Lekselius</td>
 							</tr>
-                            <tr>
-                                <td>Loke Öhrström</td>
+							<tr>
+								<td>Loke Öhrström</td>
 								<td></td>
 								<td></td>
-                            </tr>
-                            <tr>
-                                <td>Wille Evensson</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
+							</tr>
+							<tr>
+								<td>Wille Evensson</td>
+								<td></td>
+								<td></td>
+							</tr>
 						</tbody>
 
 					</table>
@@ -202,7 +215,7 @@
 					<dt>Discord</dt>
 					<dd>snabkol</dd>
 					<dt>Email</dt>
-					<dd><a href="Carwah0210@gmail.com">Carwah0210@gmail.com</a></dd>
+					<dd><a class="link" href="Carwah0210@gmail.com">Carwah0210@gmail.com</a></dd>
 				</dl>
 				<ul class="icons">
 					<li><a href="mailto:Carwah0210@gmail.com" class="icon fa-envelope">
@@ -217,7 +230,8 @@
 				</ul>
 				</article>
 			</section>
-			<p class="copyright">&copy; Calle Wahlstedt Nilsson. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+			<p class="copyright">&copy; Calle Wahlstedt Nilsson. Design: <a class="link"
+					href="https://html5up.net">HTML5 UP</a>.</p>
 		</footer>
 	</div>
 	<button onclick="topFunction()" id="myBtn" title="Go to top">Return to top ↑</button>

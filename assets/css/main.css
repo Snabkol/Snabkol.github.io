@@ -40,6 +40,16 @@ ol, ul {
 	list-style: none;
 }
 
+.link {
+	color:rgb(124, 124, 255);
+
+}
+
+.bold {
+	color:#0c0d13;
+
+}
+
 blockquote, q {
 	quotes: none;
 }
