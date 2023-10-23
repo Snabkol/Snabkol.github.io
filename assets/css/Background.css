@@ -4,7 +4,7 @@ html {
    /* background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);*/
    background:
    /* Dots */
-   radial-gradient(circle at 100% 0%, rgba(255,255,255,.1) 10%, transparent 2%) center center / 15px 15px,
+   radial-gradient(circle at 100% 0%, hwb(0 100% 0% / 0.035) 10%, transparent 2%) center center / 15px 15px,
    /* Gradient */
    linear-gradient(to bottom right, #1E1F2E, #1E1F2E);
 
