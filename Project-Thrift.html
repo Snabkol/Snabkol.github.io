@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Cal - Thrift</title>
+  <meta name="description" content="The portfolio of Calle Wahlstedt Nilsson" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <span class="header__logo-sub">Calle Wahlstedt Nilsson</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html#" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">Projects </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./assets/documents/CV.pdf" class="header__link" target="_blank"> My CV </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html#home"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./assets/documents/CV.pdf"> CV </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Thrift</h1><br>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          <strong>Personal Project - 4 Weeks</strong><br>
+          A unique blend of platforming and stealth mechanics wrapped in a soft narrative blanket.
+
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://grumpydredd.itch.io/thrift" class="btn btn--theme-inv" target="_blank">Game page</a>
+      </div>
+    </div>
+  </section>
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+        <!-- GAME TRAILER -->
+        <div class="responsive-container">
+          <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/j8VHwbhOwjA?si=u2mK0Fod6qUtrPm7"
+            allowfullscreen frameborder="0"></iframe>
+        </div>
+        <div class="project-details__showcase-img-cont">
+        </div>
+        <div class="project-details__content-main">
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+
+            <div class="about__content-skills">
+              <div class="skills">
+                <div class="skills__skill">Unreal Engine</div>
+                <div class="skills__skill">Blueprint Scripting</div>
+                <div class="skills__skill">Gameplay & UI Design</div>
+              </div>
+            </div>
+
+            <p class="project-details__desc-para">
+              Thrift started of as a personal project during mine and my friend
+              <a class="inline-hyperlink" href="https://lukasarnold.weebly.com/">Lukas Arnold's</a> time at
+              Playgroundsquad. Both of us knew that we wanted to make something bigger than we could on our own; so we
+              decided to collaborate. The goal was to create a small vertical gameplay slice taking inspiration from
+              some of our favourite games: Dishonored, Thief, Outer Wilds & Sly Cooper.
+            </p>
+
+            <p class="project-details__desc-para">
+              We ended up with a game where the player has a lot of freedom in their movement. They can vault over any
+              ledge and are equipped with a gun capable of placing platform on any surface.
+            </p>
+
+            <h3 class="project-details__content-title">My Contribution</h3>
+            <p class="project-details__desc-para">
+              For the project I was doing most of the <strong>programming in Blueprints</strong> and focused my design
+              on <strong>Gameplay & UI.</strong>
+              Below you will find a handful of the systems I made for the game.
+            </p>
+
+            <p class="project-details__desc-para">
+              <strong>Vaulting</strong><br>
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/s9xfc9ms/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              The system to vault over any ledge proved to be quite a hassle to set up and is split into three parts -
+              <li class="project-details__desc-li">1. A forward check for walls</li>
+              <li class="project-details__desc-li">2. An Upwards check to see if that wall has a ledge within "climb
+                range"</li>
+              <li class="project-details__desc-li">3. A "simulated" vault to see if the collider of the player character
+                can fit at the projected end location of the vault</li>
+            </p>
+
+            <p class="project-details__desc-para">
+              We still had some issues where the player would get stuck inside meshes, we figured out that the traces
+              sometimes started inside the mesh and would not collide with anything at all. We solved the issue by
+              making our geometry double-sided which made our performance take a hit, but with the game being so small
+              it was not a big issue for us. Vaulting now works in pretty much all the places we tested without any
+              major issues.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/q_5ab-sn/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              This other graph for vaulting is the auto-crouch. I added it because we felt that the player would be
+              limited in their movement if they could not vault where they would have to end up crouching at the end.
+              This allowed for more open level design where you could vault into slips and smaller entrances.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/bdrz_lnm/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              As for the actual vaulting itself I decided to “animate” the player with code. First giving them a slight
+              backwards offset and then climbing up & forward. This gives the vaultinga smooth feeling while also
+              seeming somewhat more realistic.
+            </p>
+
+            <p class="project-details__desc-para">
+              This “animation” also has the added benefit of preventing the player
+              avatar from clipping into the wall or the ledge so it becomes a nice double win!
+            </p>
+
+            <p class="project-details__desc-para">
+              <strong>User Interface</strong><br>
+            </p>
+
+            <div class="project-details__showcase-img-cont">
+              <img src="./assets/Games/Thrift/UI.webp" alt="UI" class="project-details__showcase-img" />
+            </div>
+
+            <p class="project-details__desc-para">
+              The UI was a fun one for me. I wished to make a <strong>simplistic and minimalistic</strong> UI with the
+              most important
+              element shown clearly and without disruption. This ended up as the final design.
+            </p>
+
+            <p class="project-details__desc-para">
+              It is quite right-side-heavy but I find that it gets all the necessary information across without
+              cluttering the screen. The circular bars in the middle represent lockpicking progress and stamina
+              respectively.
+            </p>
+
+            <p class="project-details__desc-para">
+              These fade out when they are not currently in use (ie. empty for lockpicking & full for stamina) The only
+              persistent elements of the UI are the money counter, ammo counter & collected keys which should all be
+              visible to convey what resources the player is currently carrying so that they may plan their route
+              accordingly.
+            </p>
+
+            <p class="project-details__desc-para">
+              Slightly Above (to the left) of the ammo counter is the crouch status-icon. This icon appears when the
+              player is crouching to signal the character’s sneaky and slow behaviour.
+            </p>
+
+            <div class="project-details__showcase-img-cont">
+              <img src="./assets/Games/Thrift/doorUI.webp" alt="UI" class="project-details__showcase-img" />
+            </div>
+
+            <p class="project-details__desc-para">
+              Another aspect was the <strong>Interact Prompts</strong>. I decided to make these into worldspace widgets
+              that keep to the
+              style with thick black borders. In the event of doors that require a certain key, we have made sure to
+              <strong>color code</strong> the word with the color of the lock & the key. This is all automated and set
+              up via the door
+              making it easy to configure each instance. Every interactable in the game has a prompt and a key to
+              trigger the interaction.
+            </p>
+
+              <video src="assets/Games/Thrift/Tipptapp.webm" width="100%" autoplay muted loop>Video not
+                supported in your browser.</video><br>
+
+            <p class="project-details__desc-para">
+              One thing that has always been frustrating in stealth games is the lack of information which makes it hard
+              to plan your sneaky ventures ahead of time.
+            </p>
+
+            <p class="project-details__desc-para">
+              I wanted to solve this issue by introducing <strong>footstep prompts</strong>. Together with actual sounds
+              being emitted,
+              if the player is in a reasonable range from the footsteps they will also be able to see them to give
+              further information regarding positions of guards.
+            </p>
+
+            <p class="project-details__desc-para">
+              However, to not make the player rely solely on this mechanic we added some stationary guards around the
+              map as well that will catch an unsuspecting player off guard if they abuse the footstep prompts.
+            </p>
+
+              <strong>Easy to use actors for level design</strong>
+              <video src="assets/Games/Thrift/LevelDesignActors.webm" width="100%" autoplay muted loop>Video not
+                supported in your browser.</video><br>
+
+            <p class="project-details__desc-para">
+              Learning to utilise the <strong>construction script</strong> was a fun experience. I wanted to make as
+              many of my
+              map-actors changeable and <strong>instance editable</strong> to make it easier for Lukas to place them
+              where he saw fit and
+              customise without too much hassle. This ended up being quite an interesting thing to develop and I will
+              definitely keep making construction scripts for myself and others in the future!
+            </p>
+
+            <p class="project-details__desc-para">
+              During Thrift I interconnected the gameplay and cosmetic logic of these actors. Later I learned about
+              inheritance and has preferred that workflow over what I did here, even if I still use the construction
+              script to run cosmetic changes to this day!
+            </p>
+
+            <p class="project-details__desc-para">
+              <strong>Playing around in the UE5 Shader Graph</strong>
+            </p>
+
+            <p class="project-details__desc-para">
+              Other than elements of the project listed above I also fiddled with making some art in the form of a
+              material that sticks to surfaces as well as two post-processing materials to make the game get a stylized
+              look via thick outlines & a cel shader.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/zo4i_a5b/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              The Cel shader was made following a tutorial by UnrealCG and altering it slightly to more align to our
+              desired look and feel.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/0nb3pn5_/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              Similarly, the outline Post-Process Material was made following a tutorial by Ben Cloward. Mostly altering
+              the parameters & attempting to add a slight camera fall off to the outline.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/vt_gev-h/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              The displacement or “sticky” material was inspired by a post by Unsweet on Artstation. This material was
+              used for the platforms that the projectiles produce to give it a really sticky look.
+            </p>
+
+          </div>
+
+          <div class="project-cs-hero__cta">
+            <a href="index.html#projects" class="btn btn--bg" target="_self">Return</a>
+          </div>
+        </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Socials</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/">
+              <img class="main-footer__icon" src="./assets/png/itchio-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">You've reached the end of this page!</h4>
+          <p class="main-footer__short-desc">
+            Check out my social links and <strong>have a great day.</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2024.
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>

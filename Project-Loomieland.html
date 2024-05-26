@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Cal - Loomieland</title>
+  <meta name="description" content="The portfolio of Calle Wahlstedt Nilsson" />
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__content">
+      <div class="header__logo-container">
+        <span class="header__logo-sub">Calle Wahlstedt Nilsson</span>
+      </div>
+      <div class="header__main">
+        <ul class="header__links">
+          <li class="header__link-wrapper">
+            <a href="./index.html#" class="header__link"> Home </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#about" class="header__link">About </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./index.html#projects" class="header__link">Projects </a>
+          </li>
+          <li class="header__link-wrapper">
+            <a href="./assets/documents/CV.pdf" class="header__link" target="_blank"> My CV </a>
+          </li>
+        </ul>
+        <div class="header__main-ham-menu-cont">
+          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
+            class="header__main-ham-menu-close d-none" />
+        </div>
+      </div>
+    </div>
+    <div class="header__sm-menu">
+      <div class="header__sm-menu-content">
+        <ul class="header__sm-menu-links">
+          <li class="header__sm-menu-link">
+            <a href="./index.html#home"> Home </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#about"> About </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./index.html#projects"> Projects </a>
+          </li>
+
+          <li class="header__sm-menu-link">
+            <a href="./assets/documents/CV.pdf"> CV </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section class="project-cs-hero">
+    <div class="project-cs-hero__content">
+      <h1 class="heading-primary">Trouble in Loomie Land</h1><br>
+      <div class="project-cs-hero__info">
+        <p class="text-primary">
+          <strong>Smultronbarna' - 9 Weeks</strong><br>
+          A 3D platformer in a dreamy landscape
+
+        </p>
+      </div>
+      <div class="project-cs-hero__cta">
+        <a href="https://snabkol.itch.io/loomieland" class="btn btn--theme-inv" target="_blank">Game page</a>
+      </div>
+    </div>
+  </section>
+  <section class="project-details">
+    <div class="main-container">
+      <div class="project-details__content">
+
+        <!-- GAME TRAILER -->
+        <div class="responsive-container">
+          <iframe class="responsive-iframe" src="https://www.youtube.com/embed/coZOnCt3xkU?si=-5ATUpKUynAVj9EP"
+            allowfullscreen frameborder="0"></iframe>
+        </div>
+        <div class="project-details__showcase-img-cont">
+        </div>
+        <div class="project-details__content-main">
+          <div class="project-details__desc">
+            <h3 class="project-details__content-title">Project Overview</h3>
+
+
+            <!-- PROJECT TAGS -->
+            <div class="about__content-skills">
+              <div class="skills">
+                <div class="skills__skill">Unreal Engine 5</div>
+                <div class="skills__skill">Gameplay Design</div>
+                <div class="skills__skill">UI design & Implementation</div>
+              </div>
+            </div>
+
+
+            <p class="project-details__desc-para">
+              Trouble in Loomie Land is a Third-person 3D Platformer where you play as Friend, a keeper of childrens'
+              dreams. Your mission is to collect dream catchers and return the gloomie loomies into their happy selves.
+              For this project I wanted to practice a more rigid workflow and taking ownership more seriously. I focused
+              heavily on prototyping and iterating in close communication with our programmers in order to ensure the
+              best results and I think we did a good job. I also delved deeper into the Unreal Engine rabbit hole with
+              notified, multiplayer replication & saving variables across levels.
+            </p>
+
+            <!-- CONTRIBUTION PARAGRAPH -->
+            <h3 class="project-details__content-title">My Contribution</h3>
+            <p class="project-details__desc-para">
+              For this project I spent more time <strong>communicating</strong> with our programmers and working with
+              classes and systems they made, such as the game's <strong>Epic Online Systems</strong> integration and the
+              movement mechanics. I also spent a lot of time <strong>prototyping</strong> and finally
+              <strong>implementing</strong> said systems.
+            </p>
+
+
+            <p class="project-details__desc-para">
+              <strong>Fishing</strong><br>
+
+
+            <p class="project-details__desc-para">
+              <video src="assets/Games/LoomieLand/LoomieLand - Fishing.webm" width="100%" autoplay muted loop>Video not
+                supported in your browser.</video><br>
+            </p>
+
+            <p class="project-details__desc-para">
+              The biggest player mechanic I built for Loomie Land was the ability for the player to fish using their
+              fishing rod. This has three different usages: to fish up power-ups, to interact with levers from a
+              distance and to (in multiplayer) pull the other player towards you. The system is split up into three
+              parts:
+            </p>
+            <p class="project-details__desc-para">
+              <li class="project-details__desc-li">1. Input</li>
+              <li class="project-details__desc-li">2. Preview</li>
+              <li class="project-details__desc-li">3. Effect</li>
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/0-9m370-/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              Fish is not incredibly complex on its own but in order to prevent the player from fiddling too much with
+              swapping abilities in the middle of fishing I set up some extra checks. As well as preparing the aiming
+              mode.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/o-f5fem9/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              The Fishing preview was a fun challenge to get right. It too is split into three distinct parts, the first
+              is giving a better angle from which to aim. We did this by placing an invisible component on the character
+              and lerping the camera position from its original position to this invisible component when the aim key is
+              held. We also enabled "Orient Rotation to movement" in the character movement making the character turn
+              with the mouse which we did not want them to do normally, but while aiming it adds both immersion and
+              eases the aiming slightly. For further feedback the reach of the throw also lerps together with the camera
+              moving making it feel really smooth.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/63zamirx/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              The second part of the fishing preview is the preview itself, which attempts to predict a projectile path
+              with strength, radius and gravity all being exposed to us in design to fiddle with. Then a whole bunch of
+              variables are passed along for different purposes. The main one being the trace spawning, which is just a
+              for each loop which spawns a whole bunch of blue balls with varying opacity and color or moves them if
+              they already exist in the world. Similar code is ran for the ring at the end of the preview seen in the
+              GIF above. The effect part of the fishing rod is way less interesting. Using an interface we trigger an
+              event on the hit actor who can then have the effect coded in its blueprint without cluttering the player
+              with more code.
+            </p>
+
+            </p>
+            <p class="project-details__desc-para">
+              <strong>User Interface</strong><br>
+
+            <p class="project-details__desc-para">
+              <video src="assets/Games/LoomieLand/LoomieLand - UI.webm" width="100%" autoplay muted loop>Video not
+                supported in your browser.</video><br>
+            </p>
+
+            <p class="project-details__desc-para">
+              Most of the in-game UI is shown here. The most prominent one is the Radial Menu for picking power-ups
+              which has a couple of neat design features. The menu features animated icons and text explaining what the
+              hoevered power is and how to use it. The icons will also change depending on if the ability is unlocked or
+              not.
+            </p>
+
+            <p class="project-details__desc-para">
+              <video src="assets/Games/LoomieLand/LoomieLand - TitleScreen.webm" width="100%" autoplay muted loop>Video
+                not
+                supported in your browser.</video><br>
+            </p>
+
+            <p class="project-details__desc-para">
+              The title screen in itself may not be very special but all of the menu-switching are animated using a
+              custom macro which can be found below. This macro made it so that the animation could be done seamless
+              without custom-animating each widget, button etc. which was very productive. Another challenge with this
+              screen was having the animated background sequence play, I had never done anything like it so I had to
+              learn about playlists and media rendering in Unreal which was quite interesting. Sadly I did not manage to
+              compress the videos so they contribute quite a lot to the file-size of the final game, but it looks pretty
+              good so that I am happy with.
+            </p>
+
+            <p class="project-details__desc-para">
+              <video src="assets/Games/LoomieLand/LoomieLand - GlideTimer.webm" width="100%" autoplay muted loop>Video
+                not
+                supported in your browser.</video><br>
+            </p>
+
+            <p class="project-details__desc-para">
+              Next up is the glide timer. The video is taken from early in development but we decided early that it was
+              true and tested and made for a clear visualisation of what was going on. Early in development we were
+              thinking about also having running in the game which also would've drained the bar, but we scrapped it. So
+              for now, just enjoy the stamina wheel which one of our artists thought was inspired by Super Mario 64 and
+              ended up becoming an inside joke for the rest of the project.
+            </p>
+
+            <p class="project-details__desc-para">
+              <video src="assets/Games/LoomieLand/LoomieLand - UI Animation.webm" width="100%" autoplay muted loop>Video
+                not
+                supported in your browser.</video><br>
+            </p>
+            <p class="project-details__desc-para">
+              Final tidbit about my UI contribution; this lil' butterfly animation and the [ICON] collected popping in.
+              Its final version is shown in the comprehensive video above, but the animations were added by me to give
+              more feedback to the player that they are collecting something and that dopamine should be dispensed!
+            </p>
+
+            <p class="project-details__desc-para">
+              <strong>Multiplayer</strong><br>
+            </p>
+
+            <p class="project-details__desc-para">
+              While most of the multiplayer support was done by our programmers in C++, I did practice and assist in
+              teaching myself and the other designers about how to do replication in Unreal Engine 5 using blueprints. I
+              also helped set up the Implementation in the start menu.
+            </p>
+
+            <div class="responsive-container-2">
+              <iframe class="responsive-iframe" src="https://blueprintue.com/render/qi6xfrp9/" scrolling="no"
+                allowfullscreen="" width="100%" frameborder="0"></iframe>
+            </div>
+
+            <p class="project-details__desc-para">
+              Implementing a synced UI in multiplayer was a bit of a hassle as all the code for UI is cosmetic and
+              client-side but we wanted to sync animations & the amount of collectibles. We eventually sorted it out by
+              utilising the Game Instance to have one central class for storing these events and client-calls.
+            </p>
+
+            <div class="marquee marquee--8">
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_Beach.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_HUB.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_HubNight.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_Mask.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_NightIslandFinal.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_Playground.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_Sun.png" width="200" >
+              <img class="marquee__item" src="assets/Games/LoomieLand/LoomieLand_Stunned.png" width="200" >
+            </div>
+
+
+            <div class="project-cs-hero__cta">
+              <a href="index.html#projects" class="btn btn--bg" target="_self">Return</a>
+            </div>
+          </div>
+
+  </section>
+
+  <footer class="main-footer">
+    <div class="main-container">
+      <div class="main-footer__upper">
+        <div class="main-footer__row main-footer__row-1">
+          <h2 class="heading heading-sm main-footer__heading-sm">
+            <span>Social</span>
+          </h2>
+          <div class="main-footer__social-cont">
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/">
+              <img class="main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol">
+              <img class="main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/">
+              <img class="main-footer__icon" src="./assets/png/itchio-ico.png" alt="icon" />
+            </a>
+          </div>
+        </div>
+        <div class="main-footer__row main-footer__row-2">
+          <h4 class="heading heading-sm text-lt">You've reached the end of this page!</h4>
+          <p class="main-footer__short-desc">
+            Check out my social links and <strong>have a great day.</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+      <div class="main-footer__lower">
+        &copy; Copyright 2021. Made by
+        <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com">Ram Maheshwari</a>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
+</html>
