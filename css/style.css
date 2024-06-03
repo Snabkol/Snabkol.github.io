@@ -13,18 +13,18 @@ $breakpoint arguement choices:
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
 :root {
-  --backgroundcolor: #ffffff ; 
-  --accentcolor: #FFCF00  ;
+  --backgroundcolor: #eeeeee ; 
+  --accentcolor: #FFCF00 ;
   --accentcolor2: #17191A ;
 
   --textcolordefault: #17191A ;
-  --textcoloraccent: #17191A  ;
-  --textcoloraccent2: #ffffff  ;
+  --textcoloraccent: #17191A ;
+  --textcoloraccent2: #eeeeee ;
   
   --shadowcolor: #000000d7 ;
 
   --skillcolor: #b8b8b8 ;
-  --textcolorskill: #000000  ;
+  --textcolorskill: #17191A ;
 
   --carouselspeed: 10s ;
   --carouseldelay: 5s ;
@@ -871,14 +871,15 @@ body {
     color: var(--textcoloraccent2);
     font-size: 1.5rem;
     line-height: 1.7;
+    
   }
 
   .main-footer__social-cont {
     margin-top: 2rem;
+    
   }
 
   .main-footer__icon {
-  background: linear-gradient();
     margin-right: 1rem;
     width: 2.5rem;
   }
