@@ -115,13 +115,12 @@ body {
   }
 
   .heading-sec__mb-bg {
-    margin-bottom: 11rem;
     color: var(--textcoloraccent)
   }
 
   @media only screen and (max-width: 56.25em) {
     .heading-sec__mb-bg {
-      margin-bottom: 8rem;
+      
     }
   }
 
@@ -436,7 +435,7 @@ body {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     grid-gap: 5rem;
-    margin-bottom: 5rem ;
+    margin-bottom: 0rem ;
   }
 
   @media only screen and (max-width: 56.25em) {
