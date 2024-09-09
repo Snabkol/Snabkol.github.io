@@ -12,6 +12,7 @@ $breakpoint arguement choices:
 
 Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only inside media queries
 */
+
 :root {
   --backgroundcolor: #eeeeee ; 
   --accentcolor: #FFCF00 ;
@@ -21,7 +22,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   --textcoloraccent: #17191A ;
   --textcoloraccent2: #eeeeee ;
   
-  --shadowcolor: #000000d7 ;
+  --shadowcolor: #17191A ;
 
   --skillcolor: #b8b8b8 ;
   --textcolorskill: #17191A ;
@@ -100,8 +101,7 @@ body {
   }
 
   .heading-primary {
-    color: var(--textcoloraccent2);
-    text-shadow: 6px 2px 1px var(--shadowcolor);
+    color: var(--textcoloraccent);
     font-size: 6rem;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -255,8 +255,7 @@ body {
   }
 
   .text-primary {
-    color: var(--textcoloraccent2);
-    text-shadow: 2px 2px 1px var(--shadowcolor);
+    color: var(--textcoloraccent);
     font-size: 2.2rem;
     text-align: center;
     width: 100%;
