@@ -233,6 +233,8 @@ body {
   .btn--theme {
     background: var(--accentcolor);
     color: var(--textcoloraccent);
+    padding: 1.5rem 5rem;
+    font-size: 2rem;
   }
 
   .btn--theme-inv {
@@ -240,6 +242,13 @@ body {
     background: var(--accentcolor2);
     padding: 1.5rem 8rem;
     font-size: 2rem;
+  }
+
+  .collapsible {
+    padding: 1.5rem 8rem;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 100%;
   }
 
   .sec-pad {
@@ -280,6 +289,7 @@ body {
     min-height: 80rem;
     max-height: 120rem;
     position: relative;
+    animation: HeroMove 10 infinite;
   }
 
   @media only screen and (max-width: 37.5em) {
@@ -1207,3 +1217,12 @@ body {
   color: var(--textcoloraccent);
 }
 
+.collapse-content {
+  padding: 0% 2%;
+  border-radius: 0 0 25px 25px;
+  background-color: rgb(252, 252, 252);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 1.5vh;
+}

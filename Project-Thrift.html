@@ -102,6 +102,7 @@
         <div class="project-details__showcase-img-cont">
         </div>
         <div class="project-details__content-main">
+
           <div class="project-details__desc">
             <h3 class="project-details__content-title">Project Overview</h3>
 
@@ -133,136 +134,136 @@
               ledge and are equipped with a gun capable of placing platform on any surface.
             </p>
 
-            <h3 class="project-details__content-title">My Contribution</h3>
             <p class="project-details__desc-para">
               For the project I was doing most of the <strong>programming in Blueprints</strong> and focused my design
               on <strong>Gameplay & UI.</strong>
               Below you will find a handful of the systems I made for the game.
             </p>
 
-            <p class="project-details__desc-para">
-              <strong>Vaulting</strong><br>
-            </p>
+            <button type="button" class="btn collapsible">Vaulting</button>
+            <div class="collapse-content">
 
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/s9xfc9ms/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/s9xfc9ms/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                The system to vault over any ledge proved to be quite a hassle to set up and is split into three parts -
+                <li class="project-details__desc-li">1. A forward check for walls</li>
+                <li class="project-details__desc-li">2. An Upwards check to see if that wall has a ledge within "climb
+                  range"</li>
+                <li class="project-details__desc-li">3. A "simulated" vault to see if the collider of the player character
+                  can fit at the projected end location of the vault</li>
+              </p>
+  
+              <p class="project-details__desc-para">
+                We still had some issues where the player would get stuck inside meshes, we figured out that the traces
+                sometimes started inside the mesh and would not collide with anything at all. We solved the issue by
+                making our geometry double-sided which made our performance take a hit, but with the game being so small
+                it was not a big issue for us. Vaulting now works in pretty much all the places we tested without any
+                major issues.
+              </p>
+  
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/q_5ab-sn/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                This other graph for vaulting is the auto-crouch. I added it because we felt that the player would be
+                limited in their movement if they could not vault where they would have to end up crouching at the end.
+                This allowed for more open level design where you could vault into slips and smaller entrances.
+              </p>
+  
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/bdrz_lnm/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                As for the actual vaulting itself I decided to “animate” the player with code. First giving them a slight
+                backwards offset and then climbing up & forward. This gives the vaultinga smooth feeling while also
+                seeming somewhat more realistic.
+              </p>
+  
+              <p class="project-details__desc-para">
+                This “animation” also has the added benefit of preventing the player
+                avatar from clipping into the wall or the ledge so it becomes a nice double win!
+              </p>
+
+            </div> 
+
+            <button type="button" class="btn collapsible">User Interface</button>
+            <div class="collapse-content">
+            
+              <div class="project-details__showcase-img-cont">
+                <img src="./assets/Games/Thrift/UI.webp" alt="UI" class="project-details__showcase-img" />
+              </div>
+  
+              <p class="project-details__desc-para">
+                The UI was a fun one for me. I wished to make a <strong>simplistic and minimalistic</strong> UI with the
+                most important
+                element shown clearly and without disruption. This ended up as the final design.
+              </p>
+  
+              <p class="project-details__desc-para">
+                It is quite right-side-heavy but I find that it gets all the necessary information across without
+                cluttering the screen. The circular bars in the middle represent lockpicking progress and stamina
+                respectively.
+              </p>
+  
+              <p class="project-details__desc-para">
+                These fade out when they are not currently in use (ie. empty for lockpicking & full for stamina) The only
+                persistent elements of the UI are the money counter, ammo counter & collected keys which should all be
+                visible to convey what resources the player is currently carrying so that they may plan their route
+                accordingly.
+              </p>
+  
+              <p class="project-details__desc-para">
+                Slightly Above (to the left) of the ammo counter is the crouch status-icon. This icon appears when the
+                player is crouching to signal the character’s sneaky and slow behaviour.
+              </p>
+  
+              <div class="project-details__showcase-img-cont">
+                <img src="./assets/Games/Thrift/doorUI.webp" alt="UI" class="project-details__showcase-img" />
+              </div>
+  
+              <p class="project-details__desc-para">
+                Another aspect was the <strong>Interact Prompts</strong>. I decided to make these into worldspace widgets
+                that keep to the
+                style with thick black borders. In the event of doors that require a certain key, we have made sure to
+                <strong>color code</strong> the word with the color of the lock & the key. This is all automated and set
+                up via the door
+                making it easy to configure each instance. Every interactable in the game has a prompt and a key to
+                trigger the interaction.
+              </p>
+  
+                <video src="assets/Games/Thrift/Tipptapp.webm" width="100%" autoplay muted loop>Video not
+                  supported in your browser.</video><br>
+  
+              <p class="project-details__desc-para">
+                One thing that has always been frustrating in stealth games is the lack of information which makes it hard
+                to plan your sneaky ventures ahead of time.
+              </p>
+  
+              <p class="project-details__desc-para">
+                I wanted to solve this issue by introducing <strong>footstep prompts</strong>. Together with actual sounds
+                being emitted,
+                if the player is in a reasonable range from the footsteps they will also be able to see them to give
+                further information regarding positions of guards.
+              </p>
+  
+              <p class="project-details__desc-para">
+                However, to not make the player rely solely on this mechanic we added some stationary guards around the
+                map as well that will catch an unsuspecting player off guard if they abuse the footstep prompts.
+              </p>
+
             </div>
-
-            <p class="project-details__desc-para">
-              The system to vault over any ledge proved to be quite a hassle to set up and is split into three parts -
-              <li class="project-details__desc-li">1. A forward check for walls</li>
-              <li class="project-details__desc-li">2. An Upwards check to see if that wall has a ledge within "climb
-                range"</li>
-              <li class="project-details__desc-li">3. A "simulated" vault to see if the collider of the player character
-                can fit at the projected end location of the vault</li>
-            </p>
-
-            <p class="project-details__desc-para">
-              We still had some issues where the player would get stuck inside meshes, we figured out that the traces
-              sometimes started inside the mesh and would not collide with anything at all. We solved the issue by
-              making our geometry double-sided which made our performance take a hit, but with the game being so small
-              it was not a big issue for us. Vaulting now works in pretty much all the places we tested without any
-              major issues.
-            </p>
-
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/q_5ab-sn/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
-            </div>
-
-            <p class="project-details__desc-para">
-              This other graph for vaulting is the auto-crouch. I added it because we felt that the player would be
-              limited in their movement if they could not vault where they would have to end up crouching at the end.
-              This allowed for more open level design where you could vault into slips and smaller entrances.
-            </p>
-
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/bdrz_lnm/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
-            </div>
-
-            <p class="project-details__desc-para">
-              As for the actual vaulting itself I decided to “animate” the player with code. First giving them a slight
-              backwards offset and then climbing up & forward. This gives the vaultinga smooth feeling while also
-              seeming somewhat more realistic.
-            </p>
-
-            <p class="project-details__desc-para">
-              This “animation” also has the added benefit of preventing the player
-              avatar from clipping into the wall or the ledge so it becomes a nice double win!
-            </p>
-
-            <p class="project-details__desc-para">
-              <strong>User Interface</strong><br>
-            </p>
-
-            <div class="project-details__showcase-img-cont">
-              <img src="./assets/Games/Thrift/UI.webp" alt="UI" class="project-details__showcase-img" />
-            </div>
-
-            <p class="project-details__desc-para">
-              The UI was a fun one for me. I wished to make a <strong>simplistic and minimalistic</strong> UI with the
-              most important
-              element shown clearly and without disruption. This ended up as the final design.
-            </p>
-
-            <p class="project-details__desc-para">
-              It is quite right-side-heavy but I find that it gets all the necessary information across without
-              cluttering the screen. The circular bars in the middle represent lockpicking progress and stamina
-              respectively.
-            </p>
-
-            <p class="project-details__desc-para">
-              These fade out when they are not currently in use (ie. empty for lockpicking & full for stamina) The only
-              persistent elements of the UI are the money counter, ammo counter & collected keys which should all be
-              visible to convey what resources the player is currently carrying so that they may plan their route
-              accordingly.
-            </p>
-
-            <p class="project-details__desc-para">
-              Slightly Above (to the left) of the ammo counter is the crouch status-icon. This icon appears when the
-              player is crouching to signal the character’s sneaky and slow behaviour.
-            </p>
-
-            <div class="project-details__showcase-img-cont">
-              <img src="./assets/Games/Thrift/doorUI.webp" alt="UI" class="project-details__showcase-img" />
-            </div>
-
-            <p class="project-details__desc-para">
-              Another aspect was the <strong>Interact Prompts</strong>. I decided to make these into worldspace widgets
-              that keep to the
-              style with thick black borders. In the event of doors that require a certain key, we have made sure to
-              <strong>color code</strong> the word with the color of the lock & the key. This is all automated and set
-              up via the door
-              making it easy to configure each instance. Every interactable in the game has a prompt and a key to
-              trigger the interaction.
-            </p>
-
-              <video src="assets/Games/Thrift/Tipptapp.webm" width="100%" autoplay muted loop>Video not
-                supported in your browser.</video><br>
-
-            <p class="project-details__desc-para">
-              One thing that has always been frustrating in stealth games is the lack of information which makes it hard
-              to plan your sneaky ventures ahead of time.
-            </p>
-
-            <p class="project-details__desc-para">
-              I wanted to solve this issue by introducing <strong>footstep prompts</strong>. Together with actual sounds
-              being emitted,
-              if the player is in a reasonable range from the footsteps they will also be able to see them to give
-              further information regarding positions of guards.
-            </p>
-
-            <p class="project-details__desc-para">
-              However, to not make the player rely solely on this mechanic we added some stationary guards around the
-              map as well that will catch an unsuspecting player off guard if they abuse the footstep prompts.
-            </p>
-
-            <p class="project-details__desc-para">
-              <strong>Easy to use actors for level design</strong><br>
-            </p>
-
+            
+            <button type="button" class="btn collapsible">Level Design Actors</button>
+            <div class="collapse-content">
+          
               <video src="assets/Games/Thrift/LevelDesignActors.webm" width="100%" autoplay muted loop>Video not
                 supported in your browser.</video><br>
 
@@ -281,45 +282,50 @@
               script to run cosmetic changes to this day!
             </p>
 
-            <p class="project-details__desc-para">
-              <strong>Playing around in the UE5 Shader Graph</strong>
-            </p>
+            </div> 
 
-            <p class="project-details__desc-para">
-              Other than elements of the project listed above I also fiddled with making some art in the form of a
-              material that sticks to surfaces as well as two post-processing materials to make the game get a stylized
-              look via thick outlines & a cel shader.
-            </p>
+            <button type="button" class="btn collapsible">Shader Graph Studies</button>
+            <div class="collapse-content">
+        
+              <p class="project-details__desc-para">
+                Other than elements of the project listed above I also fiddled with making some art in the form of a
+                material that sticks to surfaces as well as two post-processing materials to make the game get a stylized
+                look via thick outlines & a cel shader.
+              </p>
+  
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/zo4i_a5b/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                The Cel shader was made following a tutorial by UnrealCG and altering it slightly to more align to our
+                desired look and feel.
+              </p>
+  
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/0nb3pn5_/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                Similarly, the outline Post-Process Material was made following a tutorial by Ben Cloward. Mostly altering
+                the parameters & attempting to add a slight camera fall off to the outline.
+              </p>
+  
+              <div class="responsive-container-2">
+                <iframe class="responsive-iframe" src="https://blueprintue.com/render/vt_gev-h/" scrolling="no"
+                  allowfullscreen="" width="100%" frameborder="0"></iframe>
+              </div>
+  
+              <p class="project-details__desc-para">
+                The displacement or “sticky” material was inspired by a post by Unsweet on Artstation. This material was
+                used for the platforms that the projectiles produce to give it a really sticky look.
+              </p>
 
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/zo4i_a5b/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
-            </div>
+            </div> 
 
-            <p class="project-details__desc-para">
-              The Cel shader was made following a tutorial by UnrealCG and altering it slightly to more align to our
-              desired look and feel.
-            </p>
-
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/0nb3pn5_/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
-            </div>
-
-            <p class="project-details__desc-para">
-              Similarly, the outline Post-Process Material was made following a tutorial by Ben Cloward. Mostly altering
-              the parameters & attempting to add a slight camera fall off to the outline.
-            </p>
-
-            <div class="responsive-container-2">
-              <iframe class="responsive-iframe" src="https://blueprintue.com/render/vt_gev-h/" scrolling="no"
-                allowfullscreen="" width="100%" frameborder="0"></iframe>
-            </div>
-
-            <p class="project-details__desc-para">
-              The displacement or “sticky” material was inspired by a post by Unsweet on Artstation. This material was
-              used for the platforms that the projectiles produce to give it a really sticky look.
-            </p>
+           
 
           </div>
 
