@@ -244,6 +244,7 @@ body {
   }
 
   .collapsible {
+    margin-bottom: -1vh;
     padding: 1.5rem 8rem;
     font-size: 2rem;
     cursor: pointer;
@@ -1223,5 +1224,6 @@ body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  margin-top: 1.0vh;
   margin-bottom: 1.5vh;
 }
