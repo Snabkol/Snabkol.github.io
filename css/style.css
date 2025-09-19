@@ -33,7 +33,7 @@ Inside media queries 1em is always 16px i.e 1em = 16px at every screen size only
   --carouselspeed:          10s;
   --carouseldelay:          5s;
 
-  --backgroundanimspeed:    16s;
+  --backgroundanimspeed:    120s;
 
 }
 
@@ -1242,10 +1242,10 @@ body {
 /* Background animation */
 @keyframes PatternAnimation {
   0% {
-    background-position: 0 0;
+    background-position: 0, 0;
   }
 
   100% {
-    background-position: -100vw 0;
+    background-position: -100vw, 0;
   }
 }
