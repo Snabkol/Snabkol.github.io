@@ -529,6 +529,14 @@ body
     margin-bottom:        2rem;
   }
 
+    .project-details__desc-para-small
+  {
+    font-size:            1.6rem;
+    line-height:          1.7;
+    color:                var(--textcolordefault);
+    margin-bottom:        2rem;
+  }
+
   .project-details__desc-li 
   {
     font-size:            1.8rem;
@@ -542,17 +550,20 @@ body
   {
     width:                100%;
     display:              flex;
+    margin-bottom:        64px;
   }
 
   @media only screen and (max-width: 56.25em) { .project-details__summary { display: grid; } }
 
   .project-details__card
   {
-    background-color: hsl(from var(--backgroundcolor) h s calc(l - 20));
-    border-radius:        1.75%;
-    margin:               8px;
-    padding:              16px;
-    width:                100%;
+    background-color: hsl(from var(--backgroundcolor) h s calc(l - 5));
+    border-radius:        1.75% ;
+    margin-right:         24px  ;
+    padding:              16px  ;
+    padding-left:         32px  ;
+    padding-right:        32px  ;
+    width:                100%  ;
   }
 
   .project-details__inlineImage
@@ -568,7 +579,7 @@ body
     display:              block;
     margin-left:          auto;
     margin-right:         auto;
-    width:                40%;
+    width:                80%;
   }
 
   .project-details__tools-used { margin: 0 0 7rem 0; }
@@ -920,8 +931,8 @@ body
     margin-bottom:      1.5rem;
     margin-right:       1.5rem;
     font-size:          1.6rem;
-    background:         hsl(from var(--backgroundcolor) h s calc(l - 20));
-    border-radius:      5px;
+    background:         hsl(from var(--backgroundcolor) h s calc(l - 5));
+    border-radius:      32px;
     font-weight:        600;
     color:              var(--textcoloraccent);
   }
@@ -962,6 +973,9 @@ body
   
   .hidden-hyperlink       { transition: color .3s;      }
   .hidden-hyperlink:hover { color: var(--accentcolor);  }
+
+  .hidden-hyperlink-inv       { transition: color .3s;      }
+  .hidden-hyperlink-inv:hover     { color: var(--textcoloraccent2);  }
 }
 
   /* Marquee AKA Carousel */

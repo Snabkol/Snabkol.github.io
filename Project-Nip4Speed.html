@@ -19,49 +19,15 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container"><span class="header__logo-sub">Calle Wahlstedt</span></div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper"><a href="#" class="header__link">                                         Home       </a></li>
-          <li class="header__link-wrapper"><a href="#about" class="header__link">                                    About      </a></li>
-          <li class="header__link-wrapper"><a href="#projects" class="header__link">                                 Projects   </a></li>
-          <li class="header__link-wrapper"><a href="blog-main.html" class="header__link">                            Blog       </a></li>
-          <li class="header__link-wrapper"><a href="./assets/documents/CV.pdf" class="header__link" target="_blank"> My CV      </a></li>
-        </ul>
+  <header-component></header-component>
 
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
 
-      </div>
-    </div>
-
-    <!-- HAMBURGER MENU -->
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link"><a href="#">                         Home        </a></li>
-          <li class="header__sm-menu-link"><a href="index.html#about">          About       </a></li>
-          <li class="header__sm-menu-link"><a href="index.html#projects">       Projects    </a></li>
-          <li class="header__sm-menu-link"><a href="blog-main.html">            Blog        </a></li>
-          <li class="header__sm-menu-link"><a href="./assets/documents/CV.pdf"> CV          </a></li>
-        </ul>
-      </div>
-    </div>
-
-  </header>
-
-  
   <section class="project-cs-hero">
     <div class="project-cs-hero__content">
       <h1 class="heading-primary">Nip 4 Speed</h1><br>
       <div class="project-cs-hero__info">
         <p class="text-primary">
-          <strong>Global Game Jam 2024 - 48 Hours</strong><br>
+          <strong>Global Game Jam 2024</strong><br>
           Theme: "Make me laugh"
 
         </p>
@@ -86,57 +52,63 @@
           <div class="project-details__desc">
             <h3 class="project-details__content-title">Project Overview</h3>
 
+            <!-- SUMMARY -->
+            <div class="project-details__summary">
 
-            <!-- PROJECT TAGS -->
-            <div class="about__content-skills">
-              <div class="skills">
-                <div class="skills__skill">Unity</div>
-                <div class="skills__skill">Narrative & Gameplay Design</div>
-                <div class="skills__skill">Gamejam</div>
-              </div>
+              <section class="project-details__card">
+
+                <p class="project-details__desc-para">
+                <p class="project-details__desc-para"><strong>Summary</strong></p>
+                <p class="project-details__desc-para-small">Follow a 5 minute experience in a dark moody city, driving
+                  around with a smug and super cool cat behind the steering wheel.</p>
+                <p class="project-details__desc-para-small">For this project I worked both on <strong>gameplay
+                    design</strong> but also <strong>narrative design and Implementation</strong>. After the game jam I
+                  also had to learn how to deal with a game you made blowing up online.
+                </p>
+
+              </section>
+
+              <section class="project-details__card">
+                <img class="project-details__logo" src="assets/png/Nip4Speed.png" style="margin-bottom: 16px;">
+                <li class="project-details__desc-li"><img src="assets/svg/Project_Role.svg"
+                    class="project-details__inlineImage"><strong>Role:</strong> Game Designer & Writer </li>
+                <li class="project-details__desc-li"><img src="assets/svg/Project_Engine.svg"
+                    class="project-details__inlineImage"><strong>Engine:</strong> Unity </li>
+                <li class="project-details__desc-li"><img src="assets/svg/Project_TeamSize.svg"
+                    class="project-details__inlineImage"><strong>Team Size:</strong> 5 </li>
+                <li class="project-details__desc-li"><img src="assets/svg/Project_Time.svg"
+                    class="project-details__inlineImage"><strong>Duration:</strong> 48 hours </li>
+              </section>
             </div>
 
+            <h3 class="project-details__content-title">Deepdives</h3>
             <p class="project-details__desc-para">
-              <b>Summary of my contributions:</b>
-                <li class="project-details__desc-li">Writing and implementing narrative</li>
-                <li class="project-details__desc-li">Moral Support (Learning Unity)</li>
-                <li class="project-details__desc-li">Gameplay event planning</li>
-              </p>
-
-
-            <p class="project-details__desc-para">
-              Follow a 5 minute experience in a dark moody city, driving around with a smug and super cool cat behind
-              the steering wheel.
-            </p>
-
-            <p class="project-details__desc-para">
-              For this project I worked both on <strong>gameplay design</strong> but also <strong>narrative design and
-                Implementation</strong>. After the game jam I also had to learn how to deal with a game you made blowing
-              up online.
             </p>
 
             <button type="button" class="btn collapsible">Planning & Concepting</button>
             <div class="collapse-content">
-             
+
               <p class="project-details__desc-para">
                 The moment we got the theme, we knew we wanted to do something with a cat, we iterated between making a
                 driving game where you toss a cat out the window and try to make it fly as far as possible, or a cat
-                delivering packages on a wobbly bike through windings streets. In the end we settled on a very simple game
+                delivering packages on a wobbly bike through windings streets. In the end we settled on a very simple
+                game
                 where you help a cat drive a car through the night, but you're not actually driving yourself; just
                 enjoying
                 the atmosphere and narrative. The first evening I was the only developer with previous technical
                 experience,
-                so I was sitting and trying to learn C# and the Unity interface and prototyping a character controller and
+                so I was sitting and trying to learn C# and the Unity interface and prototyping a character controller
+                and
                 very simple detection system for interactables. I did not get very far before we called it a night but I
                 learned quite a lot of how to navigate Unity as compared to Unreal and a basic rundown on the
                 component-based nature of the engine.
               </p>
-  
+
               <div class="project-details__showcase-img-cont">
                 <img src="./assets/Games/Nip4Speed/N4S_Cat.png" alt="UI" class="project-details__showcase-img" />
               </div>
 
-            </div> 
+            </div>
 
             <button type="button" class="btn collapsible">Narrative</button>
             <div class="collapse-content">
@@ -147,79 +119,58 @@
                 players would not understand what was going on, so I had to cook up dialogue that was not only funny but
                 also informative and telling of where the player should proceed next.
               </p>
-  
+
               <div class="project-details__showcase-img-cont">
                 <img src="./assets/Games/Nip4Speed/N4S_Dog.png" alt="UI" class="project-details__showcase-img" />
               </div>
 
-            </div> 
+            </div>
 
             <button type="button" class="btn collapsible">Reception</button>
             <div class="collapse-content">
-            
+
               <p class="project-details__desc-para">
                 So why is this funny gamejam game on your portfolio Calle? Well. The game got hit with massive attention
-                from different youtubers, streamers and even a feature on itch.io's own Youtube channel. Following game's
-                release on Itch we saw huge numbers of players surge in and the game ended up being a success among indie
+                from different youtubers, streamers and even a feature on itch.io's own Youtube channel. Following
+                game's
+                release on Itch we saw huge numbers of players surge in and the game ended up being a success among
+                indie
                 game youtubers from all across the globe!
               </p>
-  
-  
+
+
               <div class="project-details__showcase-img-cont">
                 <img src="./assets/Games/Nip4Speed/N4S_TopRated.png" alt="UI" class="project-details__showcase-img" />
               </div>
-  
+
               <p class="project-details__desc-para">
-                Rather quickly after the game jam we saw multiple youtube videos, instagram reels and other forms of media
+                Rather quickly after the game jam we saw multiple youtube videos, instagram reels and other forms of
+                media
                 blow up significantly. As seen both in the image above, and the one below: the game reached top 10 rated
-                and sold within its month on Itch.io. We garnered quite a lot of nice comments and feedback. Learning how
+                and sold within its month on Itch.io. We garnered quite a lot of nice comments and feedback. Learning
+                how
                 to talk to fans and dealing with feedback at this scale has been interesting and I am humbled to see our
                 silly little cat game becoming so popular.
               </p>
-  
+
               <div class="project-details__showcase-img-cont">
                 <img src="./assets/Games/Nip4Speed/N4S_TopSeller.png" alt="UI" class="project-details__showcase-img" />
               </div>
             </div>
 
-            </div> 
+          </div>
         </div>
 
         <div class="project-cs-hero__cta">
           <a href="index.html#projects" class="btn btn--bg" target="_self">Return</a>
         </div>
-        </div>
+      </div>
 
   </section>
 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
+  <footer-component></footer-component>
 
-        <div class="main-footer__row main-footer__row-left">
-          <h4 class="heading heading-sm text-lt">You've reached the end!</h4>
-          <p class="main-footer__short-desc">
-            Check out my social links and <a class="hidden-hyperlink"
-              href="https://youtu.be/z2LDn_wOMkE?si=E9iwQ-dFhyU5_FmB&t=102" target="_blank"><strong>have a great
-                day.</strong></a>
-          </p>
-        </div>
-
-        <div class="main-footer__row main-footer__row-right">
-          <h2 class="heading heading-sm desktop-right-aligned"><span>Socials</span></h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/"><img class="btn main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />      </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol"><img class="btn main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />                 </a>
-            <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/"><img class="btn main-footer__icon" src="./assets/png/itchio-ico.png" alt="icon" />                   </a>
-            <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/snabkol.bsky.social"><img class="btn main-footer__icon" src="./assets/png/Bsky-ico.png" alt="icon" /> </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-<script src="./index.js"></script>
+  <script src="js/index.js"></script>
 </body>
+
 </html>

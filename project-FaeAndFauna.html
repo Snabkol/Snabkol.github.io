@@ -18,42 +18,8 @@
 
 <body>
 
-  <!-- HEADER -->
-  <header class="header">
-    <div class="header__content">
-      <div class="header__logo-container"><span class="header__logo-sub">Calle Wahlstedt</span></div>
-      <div class="header__main">
-        <ul class="header__links">
-          <li class="header__link-wrapper"><a href="#" class="header__link">                                         Home       </a></li>
-          <li class="header__link-wrapper"><a href="#about" class="header__link">                                    About      </a></li>
-          <li class="header__link-wrapper"><a href="#projects" class="header__link">                                 Projects   </a></li>
-          <li class="header__link-wrapper"><a href="blog-main.html" class="header__link">                            Blog       </a></li>
-          <li class="header__link-wrapper"><a href="./assets/documents/CV.pdf" class="header__link" target="_blank"> My CV      </a></li>
-        </ul>
-
-        <div class="header__main-ham-menu-cont">
-          <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close"
-            class="header__main-ham-menu-close d-none" />
-        </div>
-
-      </div>
-    </div>
-
-    <!-- HAMBURGER MENU -->
-    <div class="header__sm-menu">
-      <div class="header__sm-menu-content">
-        <ul class="header__sm-menu-links">
-          <li class="header__sm-menu-link"><a href="#">                         Home        </a></li>
-          <li class="header__sm-menu-link"><a href="index.html#about">          About       </a></li>
-          <li class="header__sm-menu-link"><a href="index.html#projects">       Projects    </a></li>
-          <li class="header__sm-menu-link"><a href="blog-main.html">            Blog        </a></li>
-          <li class="header__sm-menu-link"><a href="./assets/documents/CV.pdf"> CV          </a></li>
-        </ul>
-      </div>
-    </div>
-
-  </header>
+    <!-- HEADER -->
+    <header-component></header-component>
 
 
     <section class="project-cs-hero">
@@ -90,47 +56,46 @@
                     <div class="project-details__desc">
                         <h3 class="project-details__content-title">Project Overview</h3>
 
-                        <div class="about__content-skills">
-                            <div class="skills">
-                                <div class="skills__skill">Unreal Engine</div>
-                                <div class="skills__skill">Blueprints & C++</div>
-                                <div class="skills__skill">Gameplay & Progression Design</div>
-                            </div>
+                        <!-- SUMMARY -->
+                        <div class="project-details__summary">
+
+                            <section class="project-details__card">
+
+                                <p class="project-details__desc-para">
+                                <p class="project-details__desc-para"><strong>Summary</strong></p>
+                                <p class="project-details__desc-para-small">Fae & Fauna was the first commercial project
+                                    I got to work on. As a game designer at Aurora Arts I had ownership of most of the
+                                    gameplay- and systems-design. The goal was to make a game for a target audience of
+                                    young women (14-25) who enjoy games such as Breath of the Wild, Genshin Impact,
+                                    Palia & Infinity Nikki. </p>
+                                <p class="project-details__desc-para-small">During the project I both designed,
+                                    prototyped and finally implemented major systems using both Blueprints and C++. Some
+                                    of the major systems were designed in collaboration with other team members, or had
+                                    its code revised by the team's programmers. Collaboration was a large part of my day
+                                    to day work at Aurora.
+                                </p>
+
+                            </section>
+
+                            <section class="project-details__card">
+                                <img class="project-details__logo" src="assets/png/Thrift-Title.PNG">
+                                <li class="project-details__desc-li"><img src="assets/svg/Project_Role.svg"
+                                        class="project-details__inlineImage"><strong>Role:</strong> Game Designer &
+                                    Programmer </li>
+                                <li class="project-details__desc-li"><img src="assets/svg/Project_Engine.svg"
+                                        class="project-details__inlineImage"><strong>Engine:</strong> Unreal Engine 5
+                                </li>
+                                <li class="project-details__desc-li"><img src="assets/svg/Project_TeamSize.svg"
+                                        class="project-details__inlineImage"><strong>Team Size:</strong> 7 </li>
+                                <li class="project-details__desc-li"><img src="assets/svg/Project_Time.svg"
+                                        class="project-details__inlineImage"><strong>Duration:</strong> Ongoing </li>
+                            </section>
+                            
                         </div>
 
-                        <p class="project-details__desc-para">
-                            <b>Summary of my contributions:</b>
-                            <li class="project-details__desc-li">Designed Gameplay & Progression for a open-world RPG
-                            </li>
-                            <li class="project-details__desc-li">Learnt how to code in C++ for the project</li>
-                            <li class="project-details__desc-li">Aided in communication between disciplines</li>
-                            <li class="project-details__desc-li">Responsible for building and pushing changes to
-                                Steamworks</li>
-                        </p>
-
-                        <p class="project-details__desc-para">
-                            Fae & Fauna was the first commercial project I got to work on. As a game designer at Aurora
-                            Arts I had ownership of most of the gameplay- and systems-design. The goal was to make a
-                            game
-                            for a target audience of young women (14-25) who enjoy games such as Breath of the Wild,
-                            Genshin Impact, Palia & Infinity Nikki.
-                        </p>
-
-                        <p class="project-details__desc-para">
-                            During the project I both designed, prototyped and finally implemented major systems using
-                            both Blueprints and C++. Some of the major systems were designed in collaboration with other
-                            team members, or had its code revised by the team's programmers.
-                            Collaboration was a large part of my day to day work at Aurora.
-                        </p>
-
-                        <p class="project-details__desc-para">
-                            <a class="inline-hyperlink" href="https://lukasarnold.weebly.com/">Hyperlink</a>
-                        </p>
-
-                        <h3 class="project-details__content-title">My Contribution</h3>
+                        <h3 class="project-details__content-title">Deepdives</h3>
                         <p class="project-details__desc-para">
                         </p>
-
 
                         <button type="button" class="btn collapsible">Dialogue & Quest Systems</button>
                         <div class="collapse-content">
@@ -145,75 +110,20 @@
 
                         <button type="button" class="btn collapsible">Item-Based Progression</button>
                         <div class="collapse-content">
-                            <p class="project-details__desc-para">Describe the process of designing an item-based progression in a open-world game</p>
+                            <p class="project-details__desc-para">Describe the process of designing an item-based
+                                progression in a open-world game</p>
                         </div>
 
-
-                        <p class="project-details__desc-para">
-                            <strong>Subheading</strong><br>
-                        </p>
-
-                        <div class="responsive-container-2">
-                            <iframe class="responsive-iframe" src="https://blueprintue.com/render/s9xfc9ms/"
-                                scrolling="no" allowfullscreen="" width="100%" frameborder="0"></iframe>
+                        <div class="project-cs-hero__cta">
+                            <a href="index.html#projects" class="btn btn--bg" target="_self">Return</a>
                         </div>
-
-                        <p class="project-details__desc-para">
-                            <strong>Subheading</strong><br>
-                        </p>
-
-                        <div class="project-details__showcase-img-cont">
-                            <img src="./assets/Games/Thrift/UI.webp" alt="UI" class="project-details__showcase-img" />
-                        </div>
-
-                        <video src="assets/Games/Thrift/Tipptapp.webm" width="100%" autoplay muted loop>Video not
-                            supported in your browser.</video><br>
-
-                        <p class="project-details__desc-para">
-                            <strong>Subheading</strong>
-                        </p>
-
-                        <video src="assets/Games/Thrift/LevelDesignActors.webm" width="100%" autoplay muted loop>Video
-                            not
-                            supported in your browser.</video><br>
-
                     </div>
-
-                    <div class="project-cs-hero__cta">
-                        <a href="index.html#projects" class="btn btn--bg" target="_self">Return</a>
-                    </div>
-                </div>
 
     </section>
 
-  <!-- FOOTER -->
-  <footer class="main-footer">
-    <div class="main-container">
-      <div class="main-footer__upper">
+    <footer-component></footer-component>
 
-        <div class="main-footer__row main-footer__row-left">
-          <h4 class="heading heading-sm text-lt">You've reached the end!</h4>
-          <p class="main-footer__short-desc">
-            Check out my social links and <a class="hidden-hyperlink"
-              href="https://youtu.be/z2LDn_wOMkE?si=E9iwQ-dFhyU5_FmB&t=102" target="_blank"><strong>have a great
-                day.</strong></a>
-          </p>
-        </div>
-
-        <div class="main-footer__row main-footer__row-right">
-          <h2 class="heading heading-sm desktop-right-aligned"><span>Socials</span></h2>
-          <div class="main-footer__social-cont">
-            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/"><img class="btn main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />      </a>
-            <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol"><img class="btn main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />                 </a>
-            <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/"><img class="btn main-footer__icon" src="./assets/png/itchio-ico.png" alt="icon" />                   </a>
-            <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/snabkol.bsky.social"><img class="btn main-footer__icon" src="./assets/png/Bsky-ico.png" alt="icon" /> </a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </footer>
-
-<script src="./index.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
