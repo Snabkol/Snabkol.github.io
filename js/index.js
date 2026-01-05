@@ -12,14 +12,14 @@ class Header extends HTMLElement
         `
         <header class="header">
             <div class="header__content">
-            <div class="header__logo-container"><a href="index.html#"><span class="header__logo-sub">Calle Wahlstedt</span></a></div>
+            <div class="header__logo-container"><a href="../index.html#"><span class="header__logo-sub">Calle Wahlstedt</span></a></div>
             <div class="header__main">
                 <ul class="header__links">
-                <li class="header__link-wrapper"><a href="index.html#" class="header__link">                                         Home       </a></li>
-                <li class="header__link-wrapper"><a href="index.html#about" class="header__link">                                    About      </a></li>
-                <li class="header__link-wrapper"><a href="index.html#projects" class="header__link">                                 Projects   </a></li>
-                <li class="header__link-wrapper"><a href="blog-main.html#" class="header__link">                                     Blog       </a></li>
-                <li class="header__link-wrapper"><a href="./assets/documents/CV.pdf" class="header__link" target="_blank">           My CV      </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#" class="header__link">                                         Home       </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#about" class="header__link">                                    About      </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#projects" class="header__link">                                 Projects   </a></li>
+                <li class="header__link-wrapper"><a href="../blog-main.html#" class="header__link">                                     Blog       </a></li>
+                <li class="header__link-wrapper"><a href="../assets/documents/CV.pdf" class="header__link" target="_blank">             My CV      </a></li>
                 </ul>
 
                 <div class="header__main-ham-menu-cont">
@@ -64,10 +64,10 @@ class Footer extends HTMLElement
             <div class="main-footer__upper">
 
               <div class="main-footer__row main-footer__row-left">
-                <h4 class="heading heading-sm text-lt">You've reached <a class = "hidden-hyperlink-inv" href="https://youtu.be/j0JdZSvyfDk?si=8Z2fjR837w5Z2-9s&t=6" target ="_blank"> the end!</h4>
+                <h4 class="heading heading-sm text-lt">You've reached <a class = "hidden-hyperlink-inv" href="https://youtu.be/j0JdZSvyfDk?si=AKq6kbmK5aWavwnp&t=16" target ="_blank"> the end!</h4>
                 <p class="main-footer__short-desc">
                   Check out my social links and <a class="hidden-hyperlink"
-                    href="https://youtu.be/z2LDn_wOMkE?si=E9iwQ-dFhyU5_FmB&t=102" target="_blank"><strong>have a great
+                    href="https://youtu.be/z2LDn_wOMkE?si=E9iwQ-dFhyU5_FmB" target="_blank"><strong>have a great
                       day.</strong></a>
                 </p>
               </div>
@@ -75,10 +75,10 @@ class Footer extends HTMLElement
               <div class="main-footer__row main-footer__row-right">
                 <h2 class="heading heading-sm desktop-right-aligned"><span>Socials</span></h2>
                 <div class="main-footer__social-cont">
-                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/"><img class="btn main-footer__icon" src="./assets/png/linkedin-ico.png" alt="icon" />      </a>
-                  <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol"><img class="btn main-footer__icon" src="./assets/png/github-ico.png" alt="icon" />                 </a>
-                  <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/"><img class="btn main-footer__icon" src="./assets/png/itchio-ico.png" alt="icon" />                   </a>
-                  <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/snabkol.bsky.social"><img class="btn main-footer__icon" src="./assets/png/Bsky-ico.png" alt="icon" /> </a>
+                  <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/carwah/"><img class="btn main-footer__icon" src="../assets/png/linkedin-ico.png" alt="icon" />      </a>
+                  <a target="_blank" rel="noreferrer" href="https://github.com/Snabkol"><img class="btn main-footer__icon" src="../assets/png/github-ico.png" alt="icon" />                 </a>
+                  <a target="_blank" rel="noreferrer" href="https://snabkol.itch.io/"><img class="btn main-footer__icon" src="../assets/png/itchio-ico.png" alt="icon" />                   </a>
+                  <a target="_blank" rel="noreferrer" href="https://bsky.app/profile/snabkol.bsky.social"><img class="btn main-footer__icon" src="../assets/png/Bsky-ico.png" alt="icon" /> </a>
                 </div>
               </div>
 
