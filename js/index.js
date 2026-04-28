@@ -15,11 +15,11 @@ class Header extends HTMLElement
             <div class="header__logo-container"><a href="../index.html#"><span class="header__logo-sub">Calle Wahlstedt</span></a></div>
             <div class="header__main">
                 <ul class="header__links">
-                <li class="header__link-wrapper"><a href="../index.html#" class="header__link">                                         Home       </a></li>
-                <li class="header__link-wrapper"><a href="../index.html#about" class="header__link">                                    About      </a></li>
-                <li class="header__link-wrapper"><a href="../index.html#projects" class="header__link">                                 Projects   </a></li>
-                <li class="header__link-wrapper"><a href="../blog-main.html#" class="header__link">                                     Blog       </a></li>
-                <li class="header__link-wrapper"><a href="../assets/documents/CV.pdf" class="header__link" target="_blank">             My CV      </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#" class="header__link">                                                           Home       </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#about" class="header__link">                                                      About      </a></li>
+                <li class="header__link-wrapper"><a href="../index.html#projects" class="header__link">                                                   Projects   </a></li>
+                <li class="header__link-wrapper"><a href="../blog-main.html#" class="header__link">                                                       Blog       </a></li>
+                <li class="header__link-wrapper"><a href="../assets/documents/Calle Wahlstedt - CV.pdf" class="header__link" target="_blank">             My CV      </a></li>
                 </ul>
 
                 <div class="header__main-ham-menu-cont">
@@ -35,11 +35,11 @@ class Header extends HTMLElement
             <div class="header__sm-menu">
             <div class="header__sm-menu-content">
                 <ul class="header__sm-menu-links">
-                <li class="header__sm-menu-link"><a href="index.html#">                         Home        </a></li>
-                <li class="header__sm-menu-link"><a href="index.html#about">                    About       </a></li>
-                <li class="header__sm-menu-link"><a href="index.html#projects">                 Projects    </a></li>
-                <li class="header__sm-menu-link"><a href="blog-main.html">                      Blog        </a></li>
-                <li class="header__sm-menu-link"><a href="./assets/documents/CV.pdf">           CV          </a></li>
+                <li class="header__sm-menu-link"><a href="index.html#">                                           Home        </a></li>
+                <li class="header__sm-menu-link"><a href="index.html#about">                                      About       </a></li>
+                <li class="header__sm-menu-link"><a href="index.html#projects">                                   Projects    </a></li>
+                <li class="header__sm-menu-link"><a href="blog-main.html">                                        Blog        </a></li>
+                <li class="header__sm-menu-link"><a href="./assets/documents/Calle Wahlstedt - CV.pdf">           CV          </a></li>
                 </ul>
             </div>
             </div>
@@ -89,8 +89,8 @@ class Footer extends HTMLElement
     }
 }
 
-customElements.define('footer-component', Footer);
 customElements.define('header-component', Header);
+customElements.define('footer-component', Footer);
 
 // ---
 const hamMenuBtn = document.querySelector('.header__main-ham-menu-cont')
